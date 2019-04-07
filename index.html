@@ -1,19 +1,43 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-
-  <title>My Resume</title>
-
-  <link rel="stylesheet" href="css/index.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tyler Turnipseed - Resume</title>
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <!-- side bar -->
+    <aside id="left" class="column sticky">
+      <nav class="navbar">
+        <a class="nav-item" href="#">Home</a>
+        <a class="nav-item" href="#">About</a>
+        <a class="nav-item" href="#">Portfolio</a>
+        <a class="nav-item" href="#">Contact</a>
+      </nav>
+    </aside>
+
+    <!-- main-content -->
+    <main id="right" class="column">
+      <header class="header section">
+        <div class="header-content">
+          <div class="column">
+            <h1 class="header-heading">Tyler Turnipseed</h1>
+            <p class="header-sub">Web Developer</p>
+          </div>
+
+          <img src="img/me.jpg" alt="">
+      </header>
+    </main>
+  </div>
 </body>
+
 </html>
