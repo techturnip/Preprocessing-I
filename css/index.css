@@ -191,7 +191,6 @@ body {
   width: 80vw;
   max-width: 1600px;
   background-color: #ffffff;
-  border-radius: 10px;
   height: 80vh;
   overflow: auto;
 }
@@ -218,4 +217,14 @@ body {
 }
 .navbar .nav-item {
   padding: 2rem 0;
+}
+.flex-wrapper {
+  display: flex;
+  width: 100%;
+}
+.flex-wrapper div {
+  width: 80%;
+}
+.flex-wrapper aside {
+  width: 20%;
 }
