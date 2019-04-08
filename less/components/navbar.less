@@ -1,10 +1,28 @@
 .navbar {
-  padding: 0 5rem;
-  .flex-align(center, center);
+  .flex-align(center, flex-start);
   flex-direction: column;
   width: 100%;
+  color: @light;
+
+  h3 {
+    border-bottom: solid 1px @light;
+    padding-bottom: 1rem;
+  }
 
   .nav-item {
-    padding: 2rem 0;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+
+    &:not(:nth-child(1)) {
+      padding-top: 1.8rem;
+    }
+
+    &:hover {
+      color: @red;
+      text-decoration: underline;
+    }
   }
 }

@@ -1,69 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tyler Turnipseed - Resume</title>
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Tyler Turnipseed - Resume</title>
-  <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-  <![endif]-->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-  <link rel="stylesheet" href="css/index.css">
-</head>
+  <body>
+    <div class="container">
+      <!-- side bar -->
+      <aside id="left" class="sticky">
+        <nav class="navbar">
+          <h3>Navigation</h3>
+          <a class="nav-item" href="#">Home</a>
+          <a class="nav-item" href="#">About</a>
+          <a class="nav-item" href="#">Portfolio</a>
+          <a class="nav-item" href="#">Contact</a>
+        </nav>
+      </aside>
 
-<body>
-  <div class="container">
-    <!-- side bar -->
-    <aside id="left" class="column sticky">
-      <nav class="navbar">
-        <a class="nav-item" href="#">Home</a>
-        <a class="nav-item" href="#">About</a>
-        <a class="nav-item" href="#">Portfolio</a>
-        <a class="nav-item" href="#">Contact</a>
-      </nav>
-    </aside>
-
-    <!-- main-content -->
-    <main id="right" class="column">
-      <header class="header section">
-        <div class="header-content">
-          <div class="column">
-            <h1 class="header-heading">Tyler Turnipseed</h1>
-            <p class="header-sub">Web Developer</p>
+      <!-- main-content -->
+      <main id="right">
+        <header class="header section">
+          <div class="header-content">
+            <h1 class="heading">Tyler Turnipseed</h1>
+            <p class="sub">Web Developer</p>
           </div>
 
-          <img src="img/me.jpg" alt="">
-      </header>
+          <img src="img/me.jpg" alt="" />
+        </header>
 
-      <section class="experience section">
-        <div class="flex-wrapper">
-        <div>
-        <h2>My experiences...</h2>
-        <p>I've been working with HTML/CSS for over a decade. I have experience working with HTML &amp; CSS frameworks such as Bootstrap and Materialize CSS, content management systems such as WordPress, and JavaScript libraries/frameworks like React and Angular 2+.</p>
-        </div>
+        <section class="experience section">
+          <div class="experience-content">
+            <h2>My experiences...</h2>
+            <p>
+              I've been working with HTML/CSS for over a decade. I have
+              experience working with HTML &amp; CSS frameworks such as
+              Bootstrap and Materialize CSS, content management systems such as
+              WordPress, and JavaScript libraries/frameworks like React and
+              Angular 2+.
+            </p>
+          </div>
 
-        <aside>
-          <h3>My Skills</h3>
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>React</li>
-            <li>Angular</li>
-          </ul>
-        </aside>
-        </div>
-      </section>
+          <aside class="experience-sidebar">
+            <h3>My Skills</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>React</li>
+              <li>Angular</li>
+            </ul>
+          </aside>
+        </section>
 
-      <section class="history">
-        <h2>Work History</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati velit inventore aliquid, provident repellat quos ab voluptas voluptatum omnis dolorum assumenda maiores magni eaque! Illum, maxime! Soluta aliquid veniam odit velit, commodi dolores assumenda id natus architecto rerum quibusdam eligendi.</p>
-      </section>
+        <section class="history">
+          <h2>Work History</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati
+            velit inventore aliquid, provident repellat quos ab voluptas
+            voluptatum omnis dolorum assumenda maiores magni eaque! Illum,
+            maxime! Soluta aliquid veniam odit velit, commodi dolores assumenda
+            id natus architecto rerum quibusdam eligendi.
+          </p>
+        </section>
 
-      <footer>&copy; Tyler Turnipseed - 2019</footer>
-    </main>
-  </div>
-</body>
-
+        <footer class="copyright">&copy; Tyler Turnipseed - 2019</footer>
+      </main>
+    </div>
+  </body>
 </html>

@@ -7,23 +7,50 @@ body {
   display: flex;
   width: 80vw;
   max-width: 1600px;
-  background-color: @white;
   height: 80vh;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  box-shadow: 0 5px 20px 5px #000;
 }
 
-.col {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+.section {
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: solid 1px @navy-trans;
 }
 
 #left {
   flex-shrink: 0;
+  background-color: @brown;
+  padding: 5rem;
+}
+
+#right {
+  background-color: @white;
+  padding: 5rem;
+  position: relative;
+
+  .copyright {
+    color: @navy-trans;
+    .flex-align(center, center);
+    margin: 5rem 0;
+  }
 }
 
 .sticky {
   position: sticky;
   top: 0;
+}
+
+.flex-wrapper {
+  display: flex;
+  width: 100%;
+
+  div {
+    width: 80%;
+  }
+
+  aside {
+    width: 20%;
+  }
 }
