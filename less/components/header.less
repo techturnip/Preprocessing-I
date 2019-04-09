@@ -1,8 +1,16 @@
 .header {
   .flex-align(space-evenly, center);
 
+  @media only screen and (max-width: 1442px) {
+    flex-direction: column;
+  }
+
   .header-content {
     text-align: center;
+
+    @media only screen and (max-width: 1442px) {
+      order: 2;
+    }
 
     .heading {
       font-size: 4rem;
@@ -28,5 +36,10 @@
   img {
     border-radius: 100%;
     box-shadow: 0 6px 12px @navy-trans;
+
+    @media only screen and (max-width: 1442px) {
+      margin-top: 2rem;
+      order: 1;
+    }
   }
 }

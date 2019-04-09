@@ -1,11 +1,16 @@
 .social {
   text-align: center;
 
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+
   h4 {
     margin-bottom: 2rem;
   }
 
   .social-icons {
+
     .social-link {
       .link(inherit, @red);
 

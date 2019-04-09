@@ -1,6 +1,10 @@
 body {
   .flex-align(center, center);
   overflow: hidden;
+
+  @media only screen and (max-width: 500px) {
+    overflow: auto;
+  }
 }
 
 .container {
@@ -10,6 +14,12 @@ body {
   position: relative;
   max-width: 1600px;
   box-shadow: 0 5px 20px 5px #000;
+
+  @media only screen and (max-width: 800px) {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
 }
 
 .section {
@@ -28,6 +38,13 @@ body {
   padding: 5rem;
   color: @light;
   letter-spacing: .15rem;
+  position: sticky;
+  top: 0;
+
+  @media only screen and (max-width: 800px) {
+    flex-shrink: 1;
+    height: auto;
+  }
 }
 
 .right {
@@ -40,11 +57,6 @@ body {
     .flex-align(center, center);
     margin: 5rem 0;
   }
-}
-
-.sticky {
-  position: sticky;
-  top: 0;
 }
 
 .flex-wrapper {

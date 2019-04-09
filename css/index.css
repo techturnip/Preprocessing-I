@@ -191,6 +191,11 @@ body {
   align-items: center;
   overflow: hidden;
 }
+@media only screen and (max-width: 500px) {
+  body {
+    overflow: auto;
+  }
+}
 .container {
   display: flex;
   width: 80vw;
@@ -198,6 +203,13 @@ body {
   position: relative;
   max-width: 1600px;
   box-shadow: 0 5px 20px 5px #000;
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+  }
 }
 .section {
   padding-bottom: 4rem;
@@ -214,6 +226,14 @@ body {
   padding: 5rem;
   color: #FBE8CD;
   letter-spacing: 0.15rem;
+  position: sticky;
+  top: 0;
+}
+@media only screen and (max-width: 800px) {
+  .left {
+    flex-shrink: 1;
+    height: auto;
+  }
 }
 .right {
   background-color: #ffffff;
@@ -226,10 +246,6 @@ body {
   justify-content: center;
   align-items: center;
   margin: 5rem 0;
-}
-.sticky {
-  position: sticky;
-  top: 0;
 }
 .flex-wrapper {
   display: flex;
@@ -271,8 +287,18 @@ body {
   justify-content: space-evenly;
   align-items: center;
 }
+@media only screen and (max-width: 1442px) {
+  .header {
+    flex-direction: column;
+  }
+}
 .header .header-content {
   text-align: center;
+}
+@media only screen and (max-width: 1442px) {
+  .header .header-content {
+    order: 2;
+  }
 }
 .header .header-content .heading {
   font-size: 4rem;
@@ -295,21 +321,60 @@ body {
   border-radius: 100%;
   box-shadow: 0 6px 12px rgba(44, 66, 81, 0.5);
 }
+@media only screen and (max-width: 1442px) {
+  .header img {
+    margin-top: 2rem;
+    order: 1;
+  }
+}
 .about {
   display: flex;
   width: 100%;
+}
+@media only screen and (max-width: 1442px) {
+  .about {
+    flex-wrap: wrap;
+  }
 }
 .about .about-content {
   width: 80%;
   padding-right: 2rem;
 }
-.about .about-sidebar ul li {
+@media only screen and (max-width: 1442px) {
+  .about .about-content {
+    width: 100%;
+  }
+}
+.about .about-sidebar .skills ul li {
   font-size: 2rem;
   list-style: square;
   margin-left: 2rem;
 }
-.about .about-sidebar ul li:not(:first-child) {
+.about .about-sidebar .skills ul li:not(:first-child) {
   padding-top: 2rem;
+}
+@media only screen and (max-width: 1442px) {
+  .about .about-sidebar .skills ul li {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 1442px) {
+  .about .about-sidebar .skills h3 {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 1442px) {
+  .about .about-sidebar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .about .about-sidebar {
+    width: 100%;
+  }
 }
 .contact {
   margin-top: 2rem;
@@ -319,6 +384,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+@media only screen and (max-width: 800px) {
+  .contact {
+    display: none;
+  }
 }
 .contact-item {
   display: flex;
@@ -347,6 +417,11 @@ body {
 }
 .social {
   text-align: center;
+}
+@media only screen and (max-width: 800px) {
+  .social {
+    display: none;
+  }
 }
 .social h4 {
   margin-bottom: 2rem;
