@@ -38,8 +38,13 @@
 
     ul {
       li {
+        font-size: 2rem;
         list-style: square;
         margin-left: 2rem;
+
+        &:not(:first-child) {
+          padding-top: 2rem;
+        }
       }
     }
   }
