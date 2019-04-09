@@ -6,10 +6,9 @@ body {
 .container {
   display: flex;
   width: 80vw;
-  max-width: 1600px;
   height: 80vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  position: relative;
+  max-width: 1600px;
   box-shadow: 0 5px 20px 5px #000;
 }
 
@@ -34,7 +33,7 @@ body {
 #right {
   background-color: @white;
   padding: 5rem;
-  position: relative;
+  overflow: auto;
 
   .copyright {
     color: @navy-trans;
