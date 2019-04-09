@@ -21,13 +21,18 @@
   <body>
     <div class="container">
       <!-- side bar -->
-      <aside id="left" class="sticky">
+      <aside class="left sticky">
         <nav class="navbar">
           <h3>Navigation</h3>
-          <a class="nav-item" href="#">Home</a>
-          <a class="nav-item" href="#">About</a>
-          <a class="nav-item" href="#">Portfolio</a>
-          <a class="nav-item" href="#">Contact</a>
+          <a class="nav-item" href="#home">Home</a>
+          <a class="nav-item" href="#about">About</a>
+          <a class="nav-item" href="#history">History</a>
+          <a
+            target="_blank"
+            class="nav-item"
+            href="https://techturnip.github.io/portfolio-website/#work"
+            >Portfolio</a
+          >
         </nav>
 
         <section class="contact">
@@ -66,17 +71,25 @@
       </aside>
 
       <!-- main-content -->
-      <main id="right">
-        <header class="header section">
+      <main class="right">
+        <header id="home" class="header section">
           <div class="header-content">
             <h1 class="heading">Tyler Turnipseed</h1>
             <p class="sub">Web Developer</p>
+            <a
+              target="_blank"
+              href="https://techturnip.github.io/portfolio-website/#work"
+            >
+              <button class="btn">
+                View Portfolio
+              </button>
+            </a>
           </div>
 
           <img src="img/me.jpg" alt="" />
         </header>
 
-        <section class="about section">
+        <section id="about" class="about section">
           <div class="about-content">
             <h2>About Me</h2>
             <p>
@@ -85,6 +98,42 @@
               Bootstrap and Materialize CSS, content management systems such as
               WordPress, and JavaScript libraries/frameworks like React and
               Angular 2+.
+            </p>
+            <h3>Objective</h3>
+            <p>
+              Seeking a career transition into a Web Developer position within a
+              team-oriented work environment that will challenge and grow my
+              abilities as a Developer.
+            </p>
+            <h4>Empathy</h4>
+            <p>
+              <strong>Personable</strong>, <strong>empathetic</strong>,
+              <strong>approachable</strong> and always willing to help team
+              members and clients while promoting workplace comfortability with
+              a <strong>positive attitude</strong> and tight integration within
+              the workplace culture.
+            </p>
+
+            <h4>Communication</h4>
+            <p>
+              Ability to <strong>communicate</strong> effectively with both team
+              members and clients. Technical documentation/reporting and
+              explaining technical concepts in a non-technical capacity.
+            </p>
+
+            <h4>Teamwork</h4>
+            <p>
+              Work best in team environments and independently as needed. Adept
+              in a supporting role with the ability to take initiative and lead
+              as needed. Often asked to cover for supervisors or managers and
+              provide training to support growth and cohesion within the team.
+            </p>
+
+            <h4>Open-mindedness</h4>
+            <p>
+              <strong>Adaptability</strong> within dynamic work environments.
+              Willingness to shift roles as needed and learn new skills to meet
+              the challenges that often arise in dynamic work environments.
             </p>
           </div>
 
@@ -99,10 +148,26 @@
               <li>React</li>
               <li>Angular</li>
             </ul>
+
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Empathy</li>
+              <li>Personability</li>
+              <li>Approachability</li>
+              <li>Communication</li>
+              <li>Adaptability</li>
+              <li>Positive Attitude</li>
+              <li>Teamwork</li>
+              <li>Time Management</li>
+              <li>Leadership</li>
+              <li>Accountability</li>
+              <li>Problem Solving</li>
+            </ul>
           </aside>
         </section>
 
-        <section class="history">
+        <!-- Work History -->
+        <section id="history" class="history">
           <h2>Work History</h2>
           <div class="history-item">
             <h4>Field Technician - Terracon - July 2017 - Current</h4>
