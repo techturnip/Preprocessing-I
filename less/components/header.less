@@ -1,5 +1,6 @@
 .header {
   .flex-align(space-evenly, center);
+  width: 100%;
 
   @media only screen and (max-width: 1442px) {
     flex-direction: column;
@@ -37,9 +38,18 @@
     border-radius: 100%;
     box-shadow: 0 6px 12px @navy-trans;
 
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 80%;
+    }
+
     @media only screen and (max-width: 1442px) {
       margin-top: 2rem;
       order: 1;
+      width: 60%;
     }
   }
 }

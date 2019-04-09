@@ -7,6 +7,10 @@
   h3 {
     border-bottom: solid 1px @light;
     padding-bottom: 1rem;
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
   }
 
   .nav-item {
@@ -22,6 +26,10 @@
     &:hover {
       color: @red;
       text-decoration: underline;
+    }
+
+    @media only screen and (max-width: 800px) {
+      font-size: 1.6rem;
     }
   }
 }

@@ -5,8 +5,10 @@
   .flex-align(center, center);
   flex-direction: column;
 
-  @media only screen and (max-width: 800px) {
-    display: none;
+  h4 {
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
   }
 
   &-item {
@@ -15,11 +17,20 @@
 
     &:not(:last-child) {
       margin-bottom: 2rem;
+
+      @media only screen and (max-width: 800px) {
+        margin: 0;
+      }
     }
 
     .fa {
       display: block;
       padding-bottom: 1rem;
+
+      @media only screen and (max-width: 800px) {
+        padding-top: 2rem;
+        padding-bottom: 0;
+      }
     }
 
     .contact-link {
@@ -29,6 +40,12 @@
 
       &:hover {
         color: @red;
+      }
+
+      span {
+        @media only screen and (max-width: 800px) {
+          display: none;
+        }
       }
     }
   }
