@@ -1,0 +1,45 @@
+.social {
+  text-align: center;
+
+  @media only screen and (max-width: 800px) {
+    .flex-align(center, center);
+  }
+
+  h4 {
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  .social-icons {
+
+    .social-link {
+      .link(inherit, @red);
+      cursor: pointer;
+
+      &:not(:last-child) {
+        padding-right: 2rem;
+
+        @media only screen and (max-width: 800px) {
+          padding: 0;
+        }
+      }
+
+      .fab {
+        @media only screen and (max-width: 800px) {
+          padding-top: 2rem;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 800px) {
+      padding-top: 2rem;
+    }
+
+    @media only screen and (max-width: 800px) {
+      padding: 0;
+    }
+  }
+}

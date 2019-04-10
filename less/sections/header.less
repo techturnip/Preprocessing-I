@@ -1,0 +1,55 @@
+.header {
+  .flex-align(space-evenly, center);
+  width: 100%;
+
+  @media only screen and (max-width: 1442px) {
+    flex-direction: column;
+  }
+
+  .header-content {
+    text-align: center;
+
+    @media only screen and (max-width: 1442px) {
+      order: 2;
+    }
+
+    .heading {
+      font-size: 4rem;
+      border-bottom: solid 1px @navy-trans;
+      padding-bottom: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .sub {
+      font-size: 2.4rem;
+    }
+
+    .btn {
+      background: @white;
+      margin-top: 2rem;
+      border: solid 1px @brown;
+      padding: 1rem 2rem;
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+  }
+
+  img {
+    border-radius: 100%;
+    box-shadow: 0 6px 12px @navy-trans;
+
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 1442px) {
+      margin-top: 2rem;
+      order: 1;
+      width: 60%;
+    }
+  }
+}

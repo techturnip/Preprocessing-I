@@ -1,0 +1,55 @@
+.about {
+  display: flex;
+  width: 100%;
+
+  @media only screen and (max-width: 1442px) {
+    flex-wrap: wrap;
+  }
+
+
+  .about-content {
+    width: 80%;
+    padding-right: 2rem;
+
+    @media only screen and (max-width: 1442px) {
+      width: 100%;
+    }
+  }
+
+  .about-sidebar {
+    .skills {
+
+      ul {
+
+        li {
+          font-size: 2rem;
+          list-style: square;
+          margin-left: 2rem;
+
+          &:not(:first-child) {
+            padding-top: 2rem;
+          }
+
+          @media only screen and (max-width: 1442px) {
+            font-size: 1.6rem;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 1442px) {
+        h3 {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 1442px) {
+      .flex-align(space-evenly, flex-start);
+      width: 100%;
+    }
+
+    @media only screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+}
